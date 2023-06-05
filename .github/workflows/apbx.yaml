@@ -1,12 +1,12 @@
 name: Create and Validate Atlas Playbook
 
 on:
-  push:
-    paths:
-      - 'src/**'
-  pull_request:
-    paths:
-      - 'src/**'
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+#   push:
+#     branches: [ "main" ]
+#   pull_request:
+#     branches: [ "main" ]
+  workflow_dispatch:
 
 jobs:
   build:
